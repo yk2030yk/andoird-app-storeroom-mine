@@ -1,0 +1,45 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+    	android:orientation="vertical">
+        <ListView
+            android:id="@+id/memo_fragment_list"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:divider="@null"
+	    	android:dividerHeight="15dp">
+        </ListView>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+    		android:layout_height="wrap_content"
+    		android:orientation="horizontal"
+    		android:padding="3dp">
+    		
+            <EditText
+                android:id="@+id/memo_fragment_edit"
+                android:layout_width="0dp"
+	        	android:layout_height="fill_parent"
+	        	android:layout_weight="1"
+	        	android:layout_marginRight="3dp"
+	        	android:padding="5dp"
+	        	
+    			android:inputType="textMultiLine"/>
+
+            <Button
+                android:id="@+id/memo_fragment_editbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="chat" />
+            
+        </LinearLayout>
+        
+    </LinearLayout>
+</LinearLayout>
